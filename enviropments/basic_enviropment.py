@@ -2,7 +2,6 @@ import gym
 from gym import spaces
 import numpy as np
 
-
 class BasicEnv(gym.Env):
     def __init__(self):
         super(BasicEnv, self).__init__()  # Исправлено на BasicEnv
