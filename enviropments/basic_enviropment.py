@@ -1,6 +1,11 @@
-class basic(gym.Env):
+import gym
+from gym import spaces
+import numpy as np
+
+
+class BasicEnv(gym.Env):
     def __init__(self):
-        super(CustomEnv, self).__init__()
+        super(BasicEnv, self).__init__()  # Исправлено на BasicEnv
         self.length = 5000
         self.width = 5000
         self.height = 100
