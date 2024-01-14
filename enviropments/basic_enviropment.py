@@ -33,9 +33,9 @@ class BasicEnv(gym.Env):
 
         # Наблюдение (новое состояние среды)
         observation = self._get_observation()
-
         return observation, reward, done, info
-        def _distance(self, point_a, point_b):
+    
+    def _distance(self, point_a, point_b):
         """Вычисление расстояния между двумя точками."""
         return np.linalg.norm(np.array(point_a) - np.array(point_b))
 
