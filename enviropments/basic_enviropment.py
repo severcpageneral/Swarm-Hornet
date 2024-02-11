@@ -88,8 +88,8 @@ class BasicEnv(gym.Env):
     def _random_position(self, lower_percent, upper_percent, on_ground):
         # Генерация случайных координат в заданном процентном диапазоне высоты
         z = 0 if on_ground else np.random.uniform(self.height_range * lower_percent / 100, self.height_range * upper_percent / 100)
-        x = np.random.uniform(0, ... )  # Укажите здесь диапазон для X
-        y = np.random.uniform(0, ... )  # Укажите здесь диапазон для Y
+        x = np.random.uniform(0, 5000)  # Укажите здесь диапазон для X
+        y = np.random.uniform(0, 5000)  # Укажите здесь диапазон для Y
         return [x, y, z]
 
     def _get_observation(self):
